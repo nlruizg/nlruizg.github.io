@@ -184,6 +184,19 @@ footer{background:var(--cream);padding:60px 48px 20px;display:grid;grid-template
 #hero{grid-template-columns:1fr}.hero-right{display:none}.hero-left{padding:100px 24px 60px}nav{padding:14px 20px}nav.scrolled{padding:10px 20px}.nav-links{display:none}section{padding:60px 24px}#about{grid-template-columns:1fr;gap:40px}.servicios-grid{grid-template-columns:1fr}.proceso-steps{grid-template-columns:1fr 1fr}.step::after{display:none}.testi-grid{grid-template-columns:1fr}#contacto{grid-template-columns:1fr}footer{grid-template-columns:1fr 1fr;gap:24px}
 }
 @media(max-width:600px){.proceso-steps{grid-template-columns:1fr}footer{grid-template-columns:1fr}.form-row{grid-template-columns:1fr}}
+
+/* DOCUMENTOS PARA PACIENTES: acceso informativo sin recopilar datos clínicos */
+#documentos{background:linear-gradient(140deg,#fbf5f8,#f6f2fb)}
+.docs-intro{max-width:760px;line-height:1.75;color:var(--text2);font-size:15px}
+.docs-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;max-width:1100px;margin-top:34px}
+.docs-card{background:var(--white);border:1px solid rgba(139,123,168,.22);border-radius:17px;padding:26px;box-shadow:0 5px 24px rgba(107,90,136,.06)}
+.docs-card h3{font-family:'Cormorant Garamond',serif;color:var(--purple-dk);font-size:25px;margin-bottom:8px}
+.docs-card p{color:var(--text2);font-size:13px;line-height:1.65;margin-bottom:17px}
+.docs-pending{display:inline-block;background:#f1eaf5;color:#665179;padding:10px 15px;border-radius:24px;font-size:12px;font-weight:500}
+.docs-note{max-width:1100px;margin-top:24px;border-left:3px solid var(--purple);background:#fff;padding:18px 22px;border-radius:12px;color:var(--text2);font-size:13px;line-height:1.7}
+.docs-contact{display:inline-flex;margin-top:20px;padding:13px 24px;border-radius:25px;background:var(--purple-dk);color:white;text-decoration:none;font-size:13px}
+.docs-contact:hover{background:var(--pink)}
+@media(max-width:700px){.docs-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -195,6 +208,7 @@ footer{background:var(--cream);padding:60px 48px 20px;display:grid;grid-template
     <a href="#about">Sobre mí</a>
     <a href="#servicios">Servicios</a>
     <a href="#proceso">Proceso</a>
+    <a href="#documentos">Documentos</a>
     <a href="#testimonios">Testimonios</a>
     <a href="#contacto">Contacto</a>
     <a href="https://wa.me/573213447800?text=Hola%20Dra.%20Liliana%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita" target="_blank" class="nav-cta">Agendar cita →</a>
@@ -262,6 +276,25 @@ footer{background:var(--cream);padding:60px 48px 20px;display:grid;grid-template
     <div class="step fade-in"><div class="step-num">3</div><div class="step-h">Plan personalizado</div><p class="step-p">Diseñamos un plan a tu medida, con objetivos claros y ajustados a tus necesidades. El proceso se desarrolla a tu ritmo, entendiendo que cada persona avanza de manera diferente y que los tiempos no son rígidos, sino parte natural del proceso terapéutico.</p></div>
     <div class="step fade-in"><div class="step-num">4</div><div class="step-h">Transformación</div><p class="step-p">Sesiones orientadas a comprender y transformar la relación entre tus pensamientos, emociones y conductas, brindándote herramientas prácticas que podrás aplicar en tu día a día para generar cambios reales y sostenibles.</p></div>
   </div>
+</section>
+
+
+<section id="documentos" aria-labelledby="documentos-titulo">
+  <div class="fade-in">
+    <div class="section-tag">Antes de tu encuentro</div>
+    <h2 id="documentos-titulo" class="section-h2">Documentos para <em>pacientes</em></h2>
+    <p class="docs-intro">Descarga solamente los documentos que tu psicóloga te haya indicado. Estos archivos son plantillas en blanco; no diligencies ni envíes información clínica mediante esta página pública.</p>
+  </div>
+  <div class="docs-grid">
+    <article class="docs-card fade-in"><h3>Acuerdo de prestación de servicios</h3><p>Condiciones de atención, asistencia, pagos y acuerdos del servicio.</p><a class="docs-contact" href="formatos/acuerdo-prestacion-servicios.pdf" download>↓ Descargar PDF</a></article>
+    <article class="docs-card fade-in"><h3>Consulta individual: adultos</h3><p>Acuerdo de confidencialidad para la atención psicológica individual.</p><a class="docs-contact" href="formatos/confidencialidad-adultos.pdf" download>↓ Descargar PDF</a></article>
+    <article class="docs-card fade-in"><h3>Niños y adolescentes</h3><p>Consentimiento para padres, tutores o cuidadores; aplicar según las condiciones del caso.</p><a class="docs-contact" href="formatos/consentimiento-menores.pdf" download>↓ Descargar PDF</a></article>
+    <article class="docs-card fade-in"><h3>Atención psicológica de pareja</h3><p>Consentimiento para que cada integrante conozca y acepte las condiciones del proceso.</p><a class="docs-contact" href="formatos/consentimiento-pareja.pdf" download>↓ Descargar PDF</a></article>
+    <article class="docs-card fade-in"><h3>Tratamiento de datos personales</h3><p>Autorización para el tratamiento de datos personales y sensibles.</p><a class="docs-contact" href="formatos/tratamiento-datos-personales.pdf" download>↓ Descargar PDF</a></article>
+    <article class="docs-card fade-in"><h3>Encuentro psicológico virtual</h3><p>Consentimiento específico para la modalidad de atención a distancia.</p><a class="docs-contact" href="formatos/consentimiento-virtual.pdf" download>↓ Descargar PDF</a></article>
+  </div>
+  <div class="docs-note"><strong>Protección de tu información:</strong> estos formatos son de descarga pública y no permiten el envío de documentos diligenciados. Solicita a la profesional un canal privado para entregarlos. La descarga no sustituye la explicación ni la firma del consentimiento informado.</div>
+  <a class="docs-contact" href="mailto:nlruizg@gmail.com?subject=Solicitud%20de%20canal%20seguro%20para%20entrega%20de%20documentos">Solicitar instrucciones de entrega →</a>
 </section>
 
 <section id="testimonios">
